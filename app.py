@@ -5,7 +5,7 @@ import datetime
 from nltk.stem.lancaster import LancasterStemmer
 import numpy as np
 import tflearn
-import tensorflow as tf
+#import tensorflow as tf
 import random
 import json
 import pickle
@@ -31,7 +31,7 @@ def bag_of_words(s, words):
 				bag[i] = 1
 
 	return np.array(bag)
-tf.reset_default_graph()
+#tf.reset_default_graph()
 
 net = tflearn.input_data(shape = [None, len(training[0])])
 net = tflearn.fully_connected(net,8)
