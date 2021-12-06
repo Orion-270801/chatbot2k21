@@ -1,0 +1,83 @@
+{
+	"intents": 
+	[
+		{
+		"tag":"normalfever",
+		"patterns":["Mild fever","Normal BP","No pain","No bloodloss","No breathing problem"," cough present","Feel weak","headache present","No sweat","No Insomnia","No dehydration","No Drythroat","Normal Urine","Normal appetite","Normal Stool","Normal Skin"],
+		"response":["Suffering From Normal Fever"],
+		"context":[""]
+		},
+		{
+		"tag":"RTPCR",
+		"patterns":["No fever","Low BP","Chest pain","No bloodloss","breathing problem","cough present ","Feeling weak","Head ache present","No sweat","No Insomnia","No dehydration","No Drythroat","Normal Urine","Normal appetite","Normal Stool","Normal Skin"],
+		"response":["Patient is suggested to go for RTPCR test. May be he is suffering from covid."],
+		"context":[""]
+		},
+		{
+		"tag":"thyroid",
+		"patterns":["No fever","Low BP","No pain","No bloodloss","No breathing problem","No cough","Feeling weak","No headache","sweating","Insomnia Present","No dehydration","No Drythroat","Normal Urine","Normal appetite","Normal Stool","Normal Skin"],
+		"response":["Patient is suggested to do thyroid test."],
+		"context":[""]
+		},
+		{
+		"tag":"sugar",
+		"patterns":["No fever","Low BP","No pain","No bloodloss","No breathing problem","No cough","Feeling weak","No Headache","No sweat","No Insomnia","No dehydration","No Drythroat","High Urine","Normal appetite","Normal Stool","Normal Skin"],
+		"response":["It is a case of sugar. Patient is suggested to do sugar test."],
+		"context":[""]
+		},
+		{
+		"tag":"covid",
+		"patterns":["Mild Fever","Normal BP","No pain","No bloodloss","breathing problem","cough present","No weakness","headache present","No sweat","No Insomnia","No dehydration","No Drythroat","Normal Urine","Normal appetite","Normal Stool","Normal Skin"],
+		"response":["Patient is suggested to go for isolation. Suffering From Covid."],
+		"context":[""]
+		},
+		{
+		"tag":"foodpoison",
+		"patterns":["No fever","Normal BP","Stomach pain","No bloodloss","No breathing problem","No cough","No weakness","No headache","No sweat","No Insomnia","No dehydration","No Drythroat","Normal Urine","Normal appetite","Loose Motion","Normal Skin"],
+		"response":["Patient is suggested to consult doctor. It is a case of foodpoison"],
+		"context":[""]
+		},
+		{
+		"tag":"diarrhea",
+		"patterns":["Mild fever","High BP","Stoamc pain","No bloodloss","No breathing problem","No cough","Feeling weakness","No headache","No sweat","No Insomnia","No dehydration","No Drythroat","Normal Urine","Normal appetite","Loose Motion","Loose Skin"],
+		"response":["It is a case of diarrhea. Consult the doctor"],
+		"context":[""]
+		},
+		{
+		"tag":"injury",
+		"patterns":["High fever","Low BP","Injury pain","Bloodloss","breathing problem","No cough","No weakness","No headache","No sweat","No Insomnia","No dehydration","No Drythroat","Normal Urine","Normal appetite","Normal Stool","Normal Skin"],
+		"response":["Normal Injury. Take first aid"],
+		"context":[""]
+		},
+		{
+		"tag":"dengue",
+		"patterns":["High fever","Critical BP","Joint pain","No bloodloss","No breathing problem","No cough","Feeling weak","headache present","No sweat","No Insomnia","No dehydration","No Drythroat","Normal Urine","No appetite","Normal Stool","Rash Skin"],
+		"response":["Patient is suffering from dengue. Please consult doctor ASAP"],
+		"context":[""]
+		},
+		{
+		"tag":"malaria",
+		"patterns":["Critical fever","Normal BP","Muscle pain","Bloodloss","No breathing problem","No cough","feeling weak","No headache","sweating","No Insomnia","No dehydration","No Drythroat","Normal Urine","Normal appetite","Normal Stool","Normal Skin"],
+		"response":["Patient is suffering from malaria. Please take those medicine"],
+		"context":[""]
+		},
+		{
+		"tag":"diatyphoid",
+		"patterns":["High fever","High BP","Abdominal pain","No bloodloss","No breathing problem"," cough present"," feeling weakness","headache present","No sweat","No Insomnia","No dehydration","No Drythroat","Normal Urine","Normal appetite","constipation","Normal Skin"],
+		"response":["He is sufferiing either from diarrhea or from typhoid"],
+		"context":[""]
+		},
+		{
+		"tag":"cholera",
+		"patterns":["No fever","Low BP","No pain","No bloodloss","breathing problem","No cough","No weakness","No headache","No sweat","No Insomnia","No dehydration","Dry throat","Low Urine","Normal appetite","Normal Stool","Loose Skin"],
+		"response":["It is a case of cholera"],
+		"context":[""]
+		},
+		{
+		"tag":"flu",
+		"patterns":["Critical Fever","Normal BP","Joint pain","No bloodloss","breathing problem","cough present","feeling weak","headache present","sweating","No Insomnia","No dehydration","Dry throat","Normal Urine","No appetite","Normal Stool","Normal Skin"],
+		"response":["The patient is suffering from FLU."],
+		"context":[""]
+		}
+	]
+}
