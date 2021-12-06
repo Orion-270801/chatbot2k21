@@ -70,7 +70,7 @@ class mj(Resource):
 		#for i in message:
 		#	string = string + i
 		#print(string)
-		data = request.get_json()
+		data = request.get_json(force=True)
 		print(data)
 		msg = data['message']
 		for i in msg:
