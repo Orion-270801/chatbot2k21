@@ -10,10 +10,6 @@ import random
 import json
 import pickle
 import csv
-from flask_pymongo import PyMongo
-from google_trans_new import google_translator 
-from flask_googletrans import translator 
-translator = google_translator()  
 stemmer = LancasterStemmer()
 seat_count = 50
 #import request
@@ -52,19 +48,7 @@ from flask_restful import reqparse, abort, Api, Resource
 #model = joblib.load('model.sav')
 app = Flask(__name__)
 api = Api(app)
-mongodb_client = PyMongo(app, uri="mongodb://localhost:27017/todo_db")
-db = mongodb_client.db
-app.config["MONGO_URI"] = "mongodb://localhost:27017/todo_db"
-mongodb_client = PyMongo(app)
-db = mongodb_client.db
-"""
-@app.route("/add_one")
-def add_one():
-    db.todos.insert_one({'title': "todo title", 'body': "todo body"})
-    return flask.jsonify(message="success")
-"""
 import re
-#ts = translator(app)
 regex = '^[0-9]+$.'
 message = []
 def get_bot_response(message):
@@ -78,7 +62,6 @@ def get_bot_response(message):
 	response = random.choice(responses)
 	return str(response)
 x = []
-#from rest_framework.response import Response
 class mj(Resource):
 	@app.route('/',methods=['POST'])
 	#def get(self,message):
