@@ -1,8 +1,5 @@
 Flask
-flask_googletrans
-Flask_PyMongo
 Flask_RESTful
-google_trans_new
 nltk
 numpy
 requests
